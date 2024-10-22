@@ -1,0 +1,67 @@
+@import"variables";
+footer{
+
+    background-color: $primary-Color;
+    padding-top: 90px;
+    padding-bottom: 90px;
+    .text{
+        h2{
+            font-family: $fonts-Family;
+            color: $accent-Color;
+            font-weight: bold;
+            font-size: 20px;
+        }
+        p{
+            font-family: $font-Family;
+            color: $accent-Color;
+            font-size: 20px;
+            
+            
+        }
+        ul{
+            
+            li{
+              
+                a{
+                    text-decoration: none;
+                    color: $accent-Color;
+                    font-family: $font-Family;
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:991px){
+    footer{
+
+       
+        .text{
+            h2{
+                margin-top: 30px;
+            }
+          
+           
+          
+        }
+    }
+     
+}
+@media(max-width:512px){
+    footer{
+        padding-top: 60px;
+        padding-bottom: 60px;
+       
+        .text{
+          
+            p{
+                font-size: 18px;
+            }
+          
+           
+          
+        }
+    }
+     
+}

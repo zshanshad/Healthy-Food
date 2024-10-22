@@ -1,0 +1,56 @@
+@import"variables";
+
+.order{
+    background-color:$primary-Color;
+    padding-top: 90px;
+    padding-bottom: 90px;
+    .text{
+        h1{
+            color:$accent-Color;
+            font-family: $fonts-Family;
+            font-size: 45px;
+            font-weight: bold;
+            margin-bottom: 80px;
+       
+        }
+    }
+    img{
+        width: 80px;
+        height: 80px;
+    }
+    h2{
+        color:$accent-Color;
+        font-family: $fonts-Family;
+        font-size: 35px;
+        font-weight: bold;
+    }
+    p{
+        color:$accent-Color;
+        font-family: $font-Family;
+        font-size: 18px;
+        line-height: 1.2;
+        
+    }
+}
+
+@media(max-width:991px){
+    .order{
+    p{
+        margin-bottom: 50px;
+    }
+      
+    }
+}
+@media(max-width:400px){
+    .order{
+       padding-top: 80px;
+       padding-bottom: 40px;
+        .text{
+            h1{
+           font-size: 36px;
+                
+           
+            }
+        }
+    }
+}

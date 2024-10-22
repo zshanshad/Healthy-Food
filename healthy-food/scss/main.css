@@ -1,0 +1,602 @@
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input, select {
+  vertical-align: middle;
+}
+
+header {
+  background-image: url(../img/banner-2.png);
+  padding-bottom: 230px;
+  padding-top: 20px;
+}
+
+header .navbar ul {
+  margin-left: 350px;
+}
+
+header .navbar ul li {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 18px;
+}
+
+header .navbar ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+header .text {
+  margin-top: 100px;
+}
+
+header .text h1 {
+  color: #ffffff;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 90px;
+}
+
+header .text p {
+  color: #ffffff;
+  font-family: "Lato", sans-serif;
+  font-size: 30px;
+}
+
+@media (max-width: 1200px) {
+  header .navbar ul {
+    margin-left: 200px;
+  }
+}
+
+@media (max-width: 991px) {
+  header {
+    padding-bottom: 220px;
+  }
+  header .navbar ul {
+    margin-top: 20px;
+    margin-left: 0px;
+  }
+  header .navbar ul li {
+    margin-right: 0px !important;
+    text-align: center;
+  }
+  header .navbar ul li a {
+    text-decoration: none;
+    color: white;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    padding-bottom: 200px;
+  }
+  header .text h1 {
+    font-size: 70px;
+  }
+  header .text p {
+    font-size: 29px;
+  }
+}
+
+@media (max-width: 512px) {
+  header .navbar a img {
+    width: 250px;
+  }
+}
+
+@media (max-width: 464px) {
+  header {
+    padding-bottom: 150px;
+  }
+  header .text h1 {
+    font-size: 50px;
+  }
+  header .text p {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 395px) {
+  header {
+    padding-bottom: 130px;
+  }
+  header .navbar a img {
+    width: 170px;
+  }
+  header .navbar button {
+    width: 55px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 340px) {
+  header {
+    padding-bottom: 90px;
+  }
+  header .text h1 {
+    font-size: 45px;
+  }
+  header .text p {
+    font-size: 22px;
+  }
+}
+
+.menu {
+  background-color: #e3ecc2;
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+
+.menu .text h1 {
+  color: #7287ae;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 45px;
+  font-weight: bold;
+  margin-bottom: 70px;
+}
+
+.menu .card .card-body h5 {
+  color: #333333;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.menu .card .card-body p {
+  color: #333333;
+  font-family: "Lato", sans-serif;
+}
+
+.menu .card .card-body h3 {
+  color: #333333;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: bold;
+}
+
+.menu .btn button {
+  border: none;
+  width: 280px;
+  height: 60px;
+  border-radius: 50px;
+  color: #ffffff;
+  background-color: #7287ae;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500px;
+  font-size: 20px;
+  word-spacing: 5px;
+  letter-spacing: 3px;
+}
+
+@media (max-width: 512px) {
+  .menu {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  .menu .text h1 {
+    font-size: 35px;
+  }
+  .menu .btn button {
+    width: 200px;
+    height: 50px;
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 360px) {
+  .menu {
+    padding-bottom: 70px;
+  }
+  .menu .text h1 {
+    font-size: 30px;
+  }
+}
+
+.grid {
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.grid .section-container {
+  height: 600px;
+  --bs-gutter-x:1.5rem;
+  --bs-gutter-y:0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: calc(var( --bs-gutter-y)*-1);
+  margin-right: calc(var( --bs-gutter-x)/-2);
+  margin-left: calc(var( --bs-gutter-x)/-3);
+}
+
+.grid .section-container .columns {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0  auto;
+          flex: 0 0  auto;
+  width: 50%;
+}
+
+.grid .section-container .columns .image {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.grid .section-container .columns .content {
+  padding: 40px 50px;
+}
+
+.grid .section-container .columns h2 {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 45px;
+  color: #333333;
+  font-weight: bold;
+  margin-top: 130px;
+}
+
+.grid .section-container .columns p {
+  font-family: "Lato", sans-serif;
+  font-size: 24px;
+  color: #333333;
+}
+
+.grid .section-container .columns button {
+  border: none;
+  width: 280px;
+  height: 60px;
+  border-radius: 50px;
+  color: #ffffff;
+  background-color: #7287ae;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500px;
+  font-size: 20px;
+  word-spacing: 5px;
+  letter-spacing: 3px;
+}
+
+@media (max-width: 991px) {
+  .grid .section-container .columns h2 {
+    font-size: 45px;
+  }
+  .grid .section-container .columns p {
+    font-size: 20px;
+  }
+  .grid .section-container .columns button {
+    width: 240px;
+    height: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .grid .section-container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+  }
+  .grid .section-container .columns .image {
+    display: block;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    width: 100%;
+    height: 250px;
+  }
+  .grid .section-container .columns .content {
+    display: block;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    width: 100%;
+    padding: 20px 35px;
+  }
+  .grid .section-container .columns h2 {
+    margin-bottom: 5px;
+  }
+  .grid .section-container .columns p {
+    font-family: "Lato", sans-serif;
+    font-size: 24px;
+    color: #333333;
+  }
+  .grid .section-container .columns button {
+    border: none;
+    width: 280px;
+    height: 60px;
+    border-radius: 50px;
+    color: #ffffff;
+    background-color: #7287ae;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500px;
+    font-size: 20px;
+    word-spacing: 5px;
+    letter-spacing: 3px;
+  }
+}
+
+.order {
+  background-color: #7287ae;
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+
+.order .text h1 {
+  color: #ffffff;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 45px;
+  font-weight: bold;
+  margin-bottom: 80px;
+}
+
+.order img {
+  width: 80px;
+  height: 80px;
+}
+
+.order h2 {
+  color: #ffffff;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.order p {
+  color: #ffffff;
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+  line-height: 1.2;
+}
+
+@media (max-width: 991px) {
+  .order p {
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 400px) {
+  .order {
+    padding-top: 80px;
+    padding-bottom: 40px;
+  }
+  .order .text h1 {
+    font-size: 36px;
+  }
+}
+
+.free {
+  background-image: url(../img/freedelivery.png);
+  padding-top: 130px;
+  padding-bottom: 130px;
+}
+
+.free h1 {
+  color: #7287ae;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 55px;
+  font-weight: bold;
+}
+
+.free p {
+  color: #7287ae;
+  font-family: "Lato", sans-serif;
+  font-size: 25px;
+  line-height: 1.2;
+  margin-bottom: 50px;
+}
+
+.free button {
+  border: none;
+  width: 280px;
+  height: 60px;
+  border-radius: 50px;
+  color: #ffffff;
+  background-color: #7287ae;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500px;
+  font-size: 20px;
+  word-spacing: 5px;
+  letter-spacing: 3px;
+}
+
+@media (max-width: 512px) {
+  .free {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+  .free h1 {
+    font-size: 50px;
+  }
+  .free p {
+    font-size: 20px;
+  }
+  .free button {
+    width: 210px;
+    height: 50px;
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 381px) {
+  .free {
+    padding-top: 90px;
+    padding-bottom: 100px;
+  }
+  .free h1 {
+    font-size: 40px;
+  }
+  .free p {
+    font-size: 18px;
+  }
+  .free button {
+    width: 200px;
+    height: 50px;
+    font-size: 16px;
+  }
+}
+
+.waiter {
+  background-color: #dfe9c1;
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+
+.waiter p {
+  color: #7287ae;
+  font-family: "Lato", sans-serif;
+  font-size: 25px;
+}
+
+.waiter h2 {
+  color: #7287ae;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.waiter a {
+  text-decoration: none;
+  color: #7287ae;
+  font-size: 40px;
+}
+
+@media (max-width: 512px) {
+  .waiter p {
+    font-size: 20px;
+  }
+  .waiter h2 {
+    font-size: 25px;
+  }
+  .waiter a {
+    font-size: 30px;
+  }
+}
+
+footer {
+  background-color: #7287ae;
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+
+footer .text h2 {
+  font-family: "Ubuntu", sans-serif;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+footer .text p {
+  font-family: "Lato", sans-serif;
+  color: #ffffff;
+  font-size: 20px;
+}
+
+footer .text ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+}
+
+@media (max-width: 991px) {
+  footer .text h2 {
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 512px) {
+  footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  footer .text p {
+    font-size: 18px;
+  }
+}
+/*# sourceMappingURL=main.css.map */

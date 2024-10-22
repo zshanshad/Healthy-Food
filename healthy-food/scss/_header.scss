@@ -1,0 +1,162 @@
+@import"variables";
+header{
+    background-image: url(../img/banner-2.png);
+  
+     padding-bottom: 230px;
+    padding-top: 20px;
+   
+
+    .navbar{
+     
+       ul {
+          
+           margin-left: 350px ;
+         
+           li{
+         
+               font-family: $fonts-Family;
+               font-size: 18px;
+               a{
+                text-decoration: none;
+                color: white;   
+               }
+           }
+          
+       }
+      
+       }
+       .text{
+           margin-top: 100px;
+          
+        h1{
+            color: $accent-Color;
+            font-family: $fonts-Family;
+            font-size:90px ;
+          }
+          p{
+              color: $accent-Color;
+              font-family: $font-Family;
+              font-size:30px ;
+          }
+       }
+     
+    }
+
+
+@media(max-width:1200px){
+    header{
+       
+        .navbar{
+         
+           ul {
+              
+               margin-left: 200px ;
+             
+              
+              
+           }
+        }
+    }
+     
+}
+
+@media(max-width:991px){
+    header{
+        padding-bottom: 220px;
+        .navbar{
+         
+           ul {
+              margin-top: 20px;
+            margin-left: 0px ;
+             
+               li{
+             margin-right: 0px !important;
+              text-align: center;
+                
+                   a{
+                    text-decoration: none;
+                    color: white;   
+                   }
+               }
+              
+           }
+        }
+    }   
+}
+@media(max-width:768px){
+    header{
+        padding-bottom: 200px;
+        .text{
+            
+         h1{
+          
+             font-size:70px ;
+           }
+           p{
+              
+               font-size:29px ;
+           }
+        }
+    }
+}
+@media(max-width:512px){
+    header{
+        .navbar{
+            a{
+                img{
+                    width: 250px;
+                }
+            }
+        }
+    }
+}
+@media(max-width:464px){
+    header{
+        padding-bottom: 150px;
+        .text{
+            
+         h1{
+          
+             font-size:50px ;
+           }
+           p{
+              
+               font-size:24px ;
+           }
+        }
+    }
+}
+@media(max-width:395px){
+    header{
+        padding-bottom: 130px;
+        .navbar{
+            a{
+                img{
+                    width: 170px;
+                }
+            }
+            button{
+                width: 55px;
+                height: 40px;
+            }
+        }
+    }
+}
+@media(max-width:340px){
+    header{
+      
+        padding-bottom: 90px;
+        .text{
+            
+         h1{
+          
+             font-size:45px ;
+           }
+           p{
+              
+               font-size:22px ;
+           }
+        }
+    }
+}
+

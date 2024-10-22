@@ -1,0 +1,89 @@
+@import"variables";
+
+.menu{
+    background-color: #e3ecc2;
+    padding-top: 90px;
+    padding-bottom: 90px;
+   .text{
+       h1{
+           color: $primary-Color;
+           font-family: $fonts-Family;
+           font-size: 45px;
+           font-weight: bold;
+           margin-bottom: 70px;
+       }
+   }
+   .card{
+ 
+       .card-body{
+           
+           h5{
+            color: $secondary-Color; 
+            font-family: $fonts-Family;
+            font-size: 20px;
+            font-weight: bold;
+           }
+           p{
+            color: $secondary-Color; 
+            font-family: $font-Family;
+           
+           }
+           h3{
+               color: $secondary-Color;
+               font-family: $fonts-Family;
+               font-weight: bold;
+           }
+       }
+   }
+   .btn{
+       button{
+           border: none;
+           width: 280px;
+           height: 60px;
+           border-radius: 50px;
+        color: $accent-Color;
+        background-color:$btn-Color;
+        font-family: $fonts-Family;
+        font-weight:500px;
+        font-size: 20px;
+        word-spacing: 5px;
+        letter-spacing: 3px;
+      
+       }
+  
+
+   }
+}
+
+@media(max-width:512px){
+    .menu{
+        padding-top: 80px;
+             
+        padding-bottom: 80px;
+             .text{
+                 h1{
+                    font-size: 35px;
+                 }
+             }
+.btn{
+    button{
+        width: 200px;
+        height: 50px;
+        font-size: 18px;
+    }
+}
+    }
+}
+
+@media(max-width:360px){
+    .menu{
+      padding-bottom: 70px;
+             .text{
+                 h1{
+                    font-size: 30px;
+                 }
+             }
+
+    }
+}
+
